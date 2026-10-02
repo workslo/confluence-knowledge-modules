@@ -1,0 +1,8 @@
+{
+  "$comment": "Config for `ckm extract`; see README 'Configuration'. Unknown keys are rejected. Built-in skip classes and secret patterns always apply; these lists extend them.",
+  "skip_classes": [],
+  "ignore_files": [],
+  "title_overrides": {},
+  "secret_patterns": {},
+  "redaction_allow": []
+}

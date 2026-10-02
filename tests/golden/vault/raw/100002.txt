@@ -1,0 +1,25 @@
+Schedule
+Day
+Step
+1
+Freeze postings
+3
+Run the reconciliation query
+Check totals | variances
+5
+Sign off (threshold 1,000.50 USD)
+Query
+SELECT account, SUM(amount)
+FROM ledger
+WHERE period = 202603
+GROUP BY account;
+Never rerun the query after sign-off.
+Escalation contacts
+Raise a ticket in the
+finance queue
+.
+Template:
+sign-off-template.pdf
+. Old notes moved to
+Retired Notes
+.
