@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Space : Month-End Procedure</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Team Space : Month-End Procedure</span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div class="page-metadata">Created by <span class='author'> Pat Example</span>, last modified on Mar 01, 2026</div>
+                    <div id="main-content" class="wiki-content group">
+<h2 id="MonthEndProcedure-Schedule">Schedule</h2>
+<div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 30%"/><col style="width: 70%"/></colgroup><tbody>
+<tr><th class="confluenceTh">Day</th><th class="confluenceTh">Step</th></tr>
+<tr><td class="confluenceTd">1</td><td class="confluenceTd"><p>Freeze postings</p></td></tr>
+<tr><td class="confluenceTd">3</td><td class="confluenceTd"><p>Run the reconciliation query</p><p>Check totals | variances</p></td></tr>
+<tr><td class="confluenceTd">5</td><td class="confluenceTd">Sign off (threshold 1,000.50 USD)</td></tr>
+</tbody></table></div>
+<h2 id="MonthEndProcedure-Query">Query</h2>
+<div class="code panel pdl conf-macro output-block" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">SELECT account, SUM(amount)
+FROM ledger
+WHERE period = 202603
+GROUP BY account;</pre>
+</div></div>
+<div class="confluence-information-macro confluence-information-macro-warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Never rerun the query after sign-off.</p></div></div>
+<div id="expander-1234" class="expand-container"><div id="expander-control-1234" class="expand-control"><span class="expand-control-icon icon">&nbsp;</span><span class="expand-control-text">Escalation contacts</span></div><div id="expander-content-1234" class="expand-content"><p>Raise a ticket in the <a href="https://tickets.example.com/queue/42">finance queue</a>.</p></div></div>
+<p>Template: <a href="attachments/100002/200002.pdf" data-linked-resource-id="200002" data-linked-resource-type="attachment">sign-off-template.pdf</a>. Old notes moved to <a href="Retired-Notes_999999.html" data-linked-resource-id="999999" data-linked-resource-type="page">Retired Notes</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

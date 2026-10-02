@@ -1,0 +1,19 @@
+Overview
+This space holds the
+month-end
+runbook for the reporting team. Start with the
+Month-End Procedure
+, then read the
+Glossary
+.
+Access requests take
+2 business days
+.
+First week
+Request access to the reporting share.
+Shadow a close on day 3.
+Bring the checklist.
+Ask about status
+DONE
+items.
+Run the reconciliation yourself.

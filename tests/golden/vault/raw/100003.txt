@@ -1,0 +1,5 @@
+Close
+— the month-end process that locks a period.
+Variance
+— a difference above 0.5% between ledger and subledger.
+Definitions agreed with the controller's office.
